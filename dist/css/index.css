@@ -1,0 +1,54 @@
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
+.h100v {
+  height: 100vh;
+}
+.w100v {
+  width: 100vw;
+}
+.flex {
+  display: flex;
+}
+.flex .fixsize {
+  flex-shrink: 0;
+}
+.flex.f-row {
+  flex-direction: row;
+}
+.flex.f-col {
+  flex-direction: column;
+}
+.flex.f-wrap {
+  flex-wrap: wrap;
+}
+.flex.x-start {
+  justify-content: flex-start;
+}
+.flex.x-center {
+  justify-content: center;
+}
+.flex.x-end {
+  justify-content: flex-end;
+}
+.flex.x-space {
+  justify-content: space-between;
+}
+.flex.x-stretch {
+  justify-content: stretch;
+}
+.flex.y-start {
+  align-items: flex-start;
+}
+.flex.y-center {
+  align-items: center;
+}
+.flex.y-end {
+  align-items: flex-end;
+}
+.flex.y-stretch {
+  align-items: stretch;
+}
