@@ -43,7 +43,10 @@ const html = (cb) => {
 };
 
 const css = (cb) => {
-    src('src/stylus/*.stylus')
+    src([
+        'src/stylus/*.styl',
+        'src/stylus/*.stylus',
+    ])
         .pipe(stylus())
         .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
@@ -53,7 +56,10 @@ const css = (cb) => {
 
 const watches = (cb) => {
     watch('**/*.pug', html);
-    watch('**/*.stylus', css);
+    watch([
+        '**/*.styl',
+        '**/*.stylus',
+    ], css);
 
     return cb();
 };
